@@ -19,7 +19,7 @@ pipeline {
         // 1. Checkout code from Git repository
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/prachi57-git/NewProject.git', credentialsId: 'github-token' // Replace with your repository
+                git branch: 'master', url: 'https://github.com/prachi57-git/NewProject.git', credentialsId: 'github-token' // Replace with your repository
             }
         }
 
