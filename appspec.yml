@@ -1,0 +1,10 @@
+version: 0.0
+os: linux
+files:
+  - source: target/NewProject.war
+    destination: /opt/tomcat9/webapps/
+hooks:
+  AfterInstall:
+    - location: NewProject/restart_tomcat.sh
+      runas: root
+
